@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-100 min-h-screen;
+    background: linear-gradient(90deg, #000000 0%, #00235F 100%);
+  }
+
+  input[type="date"] {
+    @apply bg-[#111827] border-gray-800;
+    color-scheme: dark;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
+}
+
+@keyframes flame {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glass-card {
+  @apply bg-black/80 backdrop-blur-sm border border-gray-800/50;
+}
+
+.progress-glow {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
